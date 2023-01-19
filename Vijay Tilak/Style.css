@@ -1,0 +1,180 @@
+/*Style the Page background*/
+body{
+    background: linear-gradient(135deg, #f0A500, #E45826,#4A3933);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width:100%;  
+}
+/*Footer*/
+.footer{
+  color:#f0A500;
+  background-color: #4A3933;
+  padding: 10px;
+  display: block;
+
+}
+
+/*Side Navigation*/
+.sidenav {
+    height: 90%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #000000,#52057B,#892CDC);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+ 
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+.sidenav a:hover {
+   background: linear-gradient(180deg, #1298f0, #1417cb);
+   color: bisque;
+}
+.active {background-color: #1298f0;
+    font-weight: bolder;
+}
+
+/*Top Nav*/
+ol{
+  display: block;
+  padding: 5px;
+  float: right;
+  top:0;
+  right: 0;
+  position: fixed;
+  color: white;
+}
+ol li {
+  display: block;
+  background-color: #000000;
+  padding: 5px;
+  width:fit-content;
+  float: right;
+  color: white;
+}
+
+ol li a{
+  color: white;
+}
+
+ol li a:hover{
+  color:#f0A500;
+  display: block;
+  padding: 2px;
+
+}
+
+/*Footer Button*/
+
+button{
+  background: linear-gradient(90deg,#fcc306,#E45826);
+  color: black;
+  font-weight: bolder;
+  padding:5px;
+  border-radius: 5px;
+  border:none;
+
+}
+
+/*Banner*/
+.banner{
+  border:none;
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 20px;
+  background-image: url("banner.jpg");
+    /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height:150px;
+  width:100%;
+  opacity:0.8;
+  border-radius: 20px;
+}
+
+.content{
+  text-align: center;
+  width: 100%;
+}
+
+.heading{
+  text-align: center;
+  font-size: 100px;
+}
+
+/*Flip Card*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background:  linear-gradient(90deg,#fcc306,#E45826);
+  color: white;
+  transform: rotateY(180deg);
+}
